@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 import './HeroArea.css';
 const HeroArea = () => {
@@ -10,16 +11,21 @@ const HeroArea = () => {
         backgroundSize: 'cover',
       }}
     >
-      <div>
-        <h1 className='main-title'>Unique location,</h1>
-        <h1>service and stay</h1>
+      <Container className='header-text-area my-5'>
+        <h1>The art of meeting your</h1>
+        <h1>
+          highest <span >expectations</span>{' '}
+        </h1>
         <div />
         <p>
-          At the heart of San Diego, on one of the most colorful beaches, right
-          next to the Pacific ocean, lies the Hotel California, most famous for
-          it’s easy going staff and vacation you’ll never forget…
+          Enjoying the sun and sea has never been so easy. At the beach of hotel{' '}
+          California, <br />
+          you’ll find our most complete service, great seaside and easy going
+          staff.
+          <br />
+          Hotel California. Everything. Right where you need it.
         </p>
-      </div>
+      </Container>
     </header>
   );
 };
