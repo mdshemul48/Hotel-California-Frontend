@@ -30,17 +30,17 @@ const NavBar = () => {
               Home
             </Nav.Link>
             <Nav.Link as={NavLink} activeClassName='active' to='/orders' exact>
-              My Orders
+              My Reservation
             </Nav.Link>
             <Nav.Link as={NavLink} activeClassName='active' to='/manage-orders'>
-              Manage All Orders
+              Manage All Rooms
             </Nav.Link>
             <Nav.Link
               as={NavLink}
               activeClassName='active'
               to='/add-new-orders'
             >
-              Add A New Service
+              Add A New Room
             </Nav.Link>
 
             {/* login and logout button */}

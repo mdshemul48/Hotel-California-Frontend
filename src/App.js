@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // context
 import { AuthProvider } from './Contexts/AuthContext';
 // components
+import Home from './components/Home/Home';
+
+// header and footer
 import NavBar from './components/Shared/NavBar/NavBar';
 
 import './App.css';
@@ -13,7 +16,11 @@ function App() {
     <AuthProvider>
       <Router>
         <NavBar />
-        <Switch></Switch>
+        <Switch>
+          <Route path='/' exact>
+            <Home />
+          </Route>
+        </Switch>
       </Router>
     </AuthProvider>
   );
