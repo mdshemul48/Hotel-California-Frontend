@@ -18,7 +18,7 @@ const NavBar = () => {
   };
 
   return (
-    <Navbar expand='lg' variant='dark' className='navbar'>
+    <Navbar expand='lg' variant='light' className='navbar'>
       <Container className='py-2'>
         <Navbar.Brand as={Link} to='/'>
           <img src={logo} alt='website logo' />

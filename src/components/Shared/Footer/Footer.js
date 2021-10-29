@@ -9,7 +9,7 @@ const Footer = () => {
       <Container className='pt-5'>
         <Row>
           <Col lg={2}>
-            <h6 className='fw-bold text-light'>HERE TO HELP</h6>
+            <h6 className='fw-bold text-dark'>HERE TO HELP</h6>
             <ul>
               <li>
                 <Link to='#' className='footer-link'>
@@ -50,7 +50,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col lg={2}>
-            <h6 className='fw-bold text-light'>ABOUT US</h6>
+            <h6 className='fw-bold text-dark'>ABOUT US</h6>
             <ul>
               <li>
                 <Link to='#' className='footer-link'>
@@ -81,7 +81,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col lg={2}>
-            <h6 className='fw-bold text-light'>QUICK LINKS</h6>
+            <h6 className='fw-bold text-dark'>QUICK LINKS</h6>
             <ul>
               <li>
                 <Link to='#' className='footer-link'>
@@ -102,7 +102,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col lg={6}>
-            <h6 className='fw-bold text-light'>SIGN UP FOR NEWSLETTER</h6>
+            <h6 className='fw-bold text-dark'>SIGN UP FOR NEWSLETTER</h6>
             <p>Get 30% OFF coupon today subscibers.</p>
             <Row>
               <Col>
@@ -113,7 +113,7 @@ const Footer = () => {
                 />
               </Col>
               <Col>
-                <button className='btn btn-light'>Subscribe</button>
+                <button className='btn btn-dark'>Subscribe</button>
               </Col>
             </Row>
           </Col>

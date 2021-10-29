@@ -1,5 +1,5 @@
 footer {
-  background-color: #283142;
+  background-color: rgba(0, 0, 0, 0.07);
 }
 footer ul {
   padding: 0;
@@ -9,7 +9,7 @@ footer ul li {
   margin-left: 0;
 }
 footer p {
-  color: #aaa;
+  color: #222;
 }
 .footer-link {
   box-sizing: border-box;
@@ -22,10 +22,10 @@ footer p {
   line-height: 34px;
   position: relative;
   display: inline-block;
-  color: #aaa;
+  color: #222;
   font-size: 13px;
 }
 
 .footer-link:hover {
-  color: #008181;
+  color: #dc3545;
 }

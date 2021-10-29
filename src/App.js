@@ -7,7 +7,7 @@ import Home from './components/Home/Home';
 
 // header and footer
 import NavBar from './components/Shared/NavBar/NavBar';
-
+import Footer from './components/Shared/Footer/Footer';
 import './App.css';
 // bootstrap style
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,6 +21,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </AuthProvider>
   );
