@@ -9,98 +9,73 @@ const Footer = () => {
       <Container className='pt-5'>
         <Row>
           <Col lg={2}>
-            <h6 className='fw-bold text-dark'>HERE TO HELP</h6>
+            <h6 className='fw-bold text-dark'>About us</h6>
             <ul>
               <li>
                 <Link to='#' className='footer-link'>
-                  Contact Us
+                  Overview
                 </Link>
               </li>
               <li>
                 {' '}
                 <Link to='#' className='footer-link'>
-                  Return
+                  Contact
                 </Link>
               </li>
               <li>
                 <Link to='#' className='footer-link'>
-                  FAQs
+                  What to see
                 </Link>
               </li>
               <li>
                 <Link to='#' className='footer-link'>
-                  Site Map
+                  Places to visit
                 </Link>
               </li>
               <li>
                 <Link to='#' className='footer-link'>
-                  Help
+                  Hotel Activities
                 </Link>
               </li>
               <li>
                 <Link to='#' className='footer-link'>
-                  Finance
-                </Link>
-              </li>
-              <li>
-                <Link to='#' className='footer-link'>
-                  Insurance
+                  Excursions
                 </Link>
               </li>
             </ul>
           </Col>
           <Col lg={2}>
-            <h6 className='fw-bold text-dark'>ABOUT US</h6>
+            <h6 className='fw-bold text-dark'>Rooms</h6>
             <ul>
               <li>
                 <Link to='#' className='footer-link'>
-                  About Us
+                  Standard Room{' '}
                 </Link>
               </li>
               <li>
                 {' '}
                 <Link to='#' className='footer-link'>
-                  Gift Certificates
+                  Double Room
                 </Link>
               </li>
               <li>
                 <Link to='#' className='footer-link'>
-                  Affiliates
+                  Family Room
                 </Link>
               </li>
               <li>
                 <Link to='#' className='footer-link'>
-                  Blog
+                  Standard Suite
                 </Link>
               </li>
               <li>
                 <Link to='#' className='footer-link'>
-                  Privacy Policy
+                  California Suite
                 </Link>
               </li>
             </ul>
           </Col>
-          <Col lg={2}>
-            <h6 className='fw-bold text-dark'>QUICK LINKS</h6>
-            <ul>
-              <li>
-                <Link to='#' className='footer-link'>
-                  Store Locations & Hours
-                </Link>
-              </li>
-              <li>
-                {' '}
-                <Link to='#' className='footer-link'>
-                  Delivery
-                </Link>
-              </li>
-              <li>
-                <Link to='#' className='footer-link'>
-                  Secure Shopping
-                </Link>
-              </li>
-            </ul>
-          </Col>
+
           <Col lg={6}>
             <h6 className='fw-bold text-dark'>SIGN UP FOR NEWSLETTER</h6>
             <p>Get 30% OFF coupon today subscibers.</p>
