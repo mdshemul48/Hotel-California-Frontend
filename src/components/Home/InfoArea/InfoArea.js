@@ -10,7 +10,7 @@ const InfoArea = () => {
       <Container>
         <Row className='g-2'>
           <Col lg={4} className='d-flex align-items-stretch'>
-            <div className='px-3 py-4  info-text-area'>
+            <div className='px-3 py-4  info-text-area rounded'>
               <h6 className='mt-3'>IN A NUTSHELL</h6>
               <h1 className='fw-bolder'>Hotel California</h1>
               <p className='my-3'>
@@ -26,7 +26,7 @@ const InfoArea = () => {
             </div>
           </Col>
           <Col lg={8}>
-            <img src={AboutImg} className='img-fluid' alt='' />
+            <img src={AboutImg} className='w-100 rounded' alt='' />
           </Col>
         </Row>
       </Container>
