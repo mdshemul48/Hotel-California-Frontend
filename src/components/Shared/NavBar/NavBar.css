@@ -1,11 +1,11 @@
 .navbar {
-  background-color: #033b4c;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .navbar .nav-link {
-  color: #fffff9 !important;
+  color: #584528 !important;
   font-weight: 600;
 }
 .navbar .active {
-  color: #008181 !important;
+  color: #90836c !important;
 }

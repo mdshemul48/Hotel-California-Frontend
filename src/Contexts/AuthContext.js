@@ -1,13 +1,11 @@
 import { createContext } from 'react';
-import useFirebase from '../Hooks/useFirebase';
+import useFirebase from '../hooks/useFirebase';
 
 const AuthContext = createContext({
   user: {},
   isLoading: false,
   error: null,
-  createAccountWithEmailAndPassword: () => {},
   signInWithGoogle: () => {},
-  loginInWithEmailAndPassword: () => {},
 });
 
 export const AuthProvider = ({ children }) => {

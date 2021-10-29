@@ -2,8 +2,8 @@ import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink, Link, useHistory } from 'react-router-dom';
 
-import logo from '../../../assets/logo.png';
-import useAuth from '../../../Hooks/useAuth';
+import logo from '../../../assets/summer-logo.png';
+import useAuth from '../../../hooks/useAuth';
 
 import './NavBar.css';
 const NavBar = () => {
@@ -29,40 +29,33 @@ const NavBar = () => {
             <Nav.Link as={NavLink} activeClassName='active' to='/' exact>
               Home
             </Nav.Link>
+            <Nav.Link as={NavLink} activeClassName='active' to='/orders' exact>
+              My Orders
+            </Nav.Link>
+            <Nav.Link as={NavLink} activeClassName='active' to='/manage-orders'>
+              Manage All Orders
+            </Nav.Link>
             <Nav.Link
               as={NavLink}
               activeClassName='active'
-              to='/products'
-              exact
+              to='/add-new-orders'
             >
-              Products
-            </Nav.Link>
-            <Nav.Link as={NavLink} activeClassName='active' to='/contact-us'>
-              Contact Us
-            </Nav.Link>
-            <Nav.Link as={NavLink} activeClassName='active' to='/about'>
-              About Us
+              Add A New Service
             </Nav.Link>
 
             {/* login and logout button */}
             {user?.email ? (
-              <>
-                <Navbar.Text className='ms-2'>
-                  Logged in as:{' '}
-                  <span className='text-light'>{user.displayName}</span>
-                </Navbar.Text>
-                <Button
-                  variant='outline-light'
-                  className='ms-2'
-                  size='sm'
-                  onClick={handleLogout}
-                >
-                  Logout
-                </Button>
-              </>
-            ) : (
               <Button
                 variant='outline-light'
+                className='ms-2'
+                size='sm'
+                onClick={handleLogout}
+              >
+                Logout
+              </Button>
+            ) : (
+              <Button
+                variant='outline-dark'
                 className='ms-2'
                 size='sm'
                 onClick={handleLogin}
