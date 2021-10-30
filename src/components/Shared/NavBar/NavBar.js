@@ -51,7 +51,7 @@ const NavBar = () => {
             {/* login and logout button */}
             {user?.email ? (
               <Button
-                variant='outline-light'
+                variant='outline-dark'
                 className='ms-2'
                 size='sm'
                 onClick={handleLogout}

@@ -9,6 +9,9 @@ import Home from './components/Home/Home';
 import NavBar from './components/Shared/NavBar/NavBar';
 import Footer from './components/Shared/Footer/Footer';
 
+// auth
+import Auth from './components/Auth/Auth';
+
 // private route
 import PrivateRoute from './Routes/PrivateRoute';
 import './App.css';
@@ -22,6 +25,9 @@ function App() {
         <Switch>
           <Route path='/' exact>
             <Home />
+          </Route>
+          <Route path='/auth' exact>
+            <Auth />
           </Route>
           <PrivateRoute path='/my-reservation'>My Reservation</PrivateRoute>{' '}
           <PrivateRoute path='/manage-reservation'>
