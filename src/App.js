@@ -8,6 +8,9 @@ import Home from './components/Home/Home';
 // header and footer
 import NavBar from './components/Shared/NavBar/NavBar';
 import Footer from './components/Shared/Footer/Footer';
+
+// private route
+import PrivateRoute from './Routes/PrivateRoute';
 import './App.css';
 // bootstrap style
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,6 +23,11 @@ function App() {
           <Route path='/' exact>
             <Home />
           </Route>
+          <PrivateRoute path='/my-reservation'>My Reservation</PrivateRoute>{' '}
+          <PrivateRoute path='/manage-reservation'>
+            Manage All Rooms
+          </PrivateRoute>{' '}
+          <PrivateRoute path='/add-room'>Add A New Room</PrivateRoute>{' '}
         </Switch>
         <Footer />
       </Router>

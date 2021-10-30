@@ -29,17 +29,22 @@ const NavBar = () => {
             <Nav.Link as={NavLink} activeClassName='active' to='/' exact>
               Home
             </Nav.Link>
-            <Nav.Link as={NavLink} activeClassName='active' to='/orders' exact>
+            <Nav.Link
+              as={NavLink}
+              activeClassName='active'
+              to='/my-reservation'
+              exact
+            >
               My Reservation
-            </Nav.Link>
-            <Nav.Link as={NavLink} activeClassName='active' to='/manage-orders'>
-              Manage All Rooms
             </Nav.Link>
             <Nav.Link
               as={NavLink}
               activeClassName='active'
-              to='/add-new-orders'
+              to='/manage-reservation'
             >
+              Manage All Rooms
+            </Nav.Link>
+            <Nav.Link as={NavLink} activeClassName='active' to='/add-room'>
               Add A New Room
             </Nav.Link>
 
