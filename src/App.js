@@ -7,6 +7,7 @@ import { AuthProvider } from './Contexts/AuthContext';
 import Home from './components/Home/Home';
 import MyReservation from './components/MyReservation/MyReservation';
 import AddRoom from './components/AddRoom/AddRoom';
+import Services from './components/Services/Services';
 // header and footer
 import NavBar from './components/Shared/NavBar/NavBar';
 import Footer from './components/Shared/Footer/Footer';
@@ -35,7 +36,7 @@ function App() {
             <MyReservation />
           </PrivateRoute>{' '}
           <PrivateRoute path='/manage-reservation'>
-            Manage All Rooms
+            <Services />
           </PrivateRoute>{' '}
           <PrivateRoute path='/add-room'>
             <AddRoom />

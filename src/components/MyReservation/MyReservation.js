@@ -1,8 +1,19 @@
 import React from 'react';
-import { Container, Form } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
+import MyAddedRooms from './MyAddedRooms';
 const MyReservation = () => {
-  return <h1>hello world</h1>;
+  return (
+    <main>
+      <Container>
+        <MyAddedRooms />
+        <MyAddedRooms />
+        <MyAddedRooms />
+        <MyAddedRooms />
+        <MyAddedRooms />
+      </Container>
+    </main>
+  );
 };
 
 export default MyReservation;
