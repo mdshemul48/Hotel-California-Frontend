@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { FcGoogle } from 'react-icons/fc';
