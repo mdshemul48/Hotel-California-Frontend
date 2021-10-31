@@ -17,7 +17,6 @@ const AddRoom = () => {
     });
   };
 
-  console.log(process.env.REACT_APP_BACKEND_LINK);
   const RoomSubmitHandler = async (event) => {
     event.preventDefault();
 

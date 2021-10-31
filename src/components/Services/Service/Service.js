@@ -1,27 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Col } from 'react-bootstrap';
 
-const Service = () => {
+const Service = (props) => {
+  const { room } = props;
+  console.log(room);
+  const { name, description, price, _id, image } = room;
   return (
     <Col lg={4}>
-      <div className=''>
+      <div>
         <div>
-          <img
-            src='http://hotel.bold-themes.com/summer/wp-content/uploads/sites/2/2016/02/summer-room-1.jpg'
-            alt='room 1'
-            className='img-fluid rounded'
-          />
+          <img src={image} alt='room 1' className='img-fluid rounded' />
         </div>
         <div>
-          <h3>Double Room</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            mollis viverra diam ac ornare. Donec rhoncus nisi in felis congue,
-            at pulvinar nibh dapibus.
-          </p>
+          <h3>{name}</h3>
+          <p>{description}</p>
           <div className='d-flex align-items-center'>
-            <Button variant='danger'>Reserve</Button>
-            <span className='ms-2 fs-5 fw-bold text-danger'>$59 / night</span>
+            <Button as={Link} to={`/buy-service/${_id}`} variant='danger'>
+              Reserve
+            </Button>
+            <span className='ms-2 fs-5 fw-bold text-danger'>
+              ${price} / night
+            </span>
           </div>
         </div>
       </div>
