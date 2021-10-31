@@ -8,6 +8,7 @@ import Home from './components/Home/Home';
 import MyReservation from './components/MyReservation/MyReservation';
 import AddRoom from './components/AddRoom/AddRoom';
 import ManageAllRooms from './components/ManageAllRooms/ManageAllRooms';
+import BuyService from './components/BuyService/BuyService';
 // header and footer
 import NavBar from './components/Shared/NavBar/NavBar';
 import Footer from './components/Shared/Footer/Footer';
@@ -42,6 +43,9 @@ function App() {
           </PrivateRoute>{' '}
           <PrivateRoute path='/add-room'>
             <AddRoom />
+          </PrivateRoute>{' '}
+          <PrivateRoute path='/buy-service/:id'>
+            <BuyService />
           </PrivateRoute>{' '}
         </Switch>
         <Footer />
