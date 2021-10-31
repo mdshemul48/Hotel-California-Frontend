@@ -16,6 +16,10 @@ const BuyService = () => {
               <Form.Control type='text' />
             </Form.Group>
             <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
+              <Form.Label>Phone Number</Form.Label>
+              <Form.Control type='text' />
+            </Form.Group>
+            <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
               <Form.Label>Address</Form.Label>
               <Form.Control type='text' />
             </Form.Group>
