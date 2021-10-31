@@ -33,9 +33,6 @@ const Auth = () => {
           <div className='text-center my-3'>
             <img src={Logo} alt='website logo' />
           </div>
-
-          <h3 className='text-center mt-5'>Login With</h3>
-
           <Row className='my-3 mx-1 text-center my-5 px-3'>
             <Button
               variant='outline-dark'

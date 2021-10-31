@@ -46,7 +46,7 @@ const NavBar = () => {
                   activeClassName='active'
                   to='/manage-reservation'
                 >
-                  Manage All Rooms
+                  Manage All Reservation
                 </Nav.Link>
                 <Nav.Link as={NavLink} activeClassName='active' to='/add-room'>
                   Add A New Room
