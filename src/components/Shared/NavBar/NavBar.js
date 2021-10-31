@@ -29,35 +29,37 @@ const NavBar = () => {
             <Nav.Link as={NavLink} activeClassName='active' to='/' exact>
               Home
             </Nav.Link>
-            <Nav.Link
-              as={NavLink}
-              activeClassName='active'
-              to='/my-reservation'
-              exact
-            >
-              My Reservation
-            </Nav.Link>
-            <Nav.Link
-              as={NavLink}
-              activeClassName='active'
-              to='/manage-reservation'
-            >
-              Manage All Rooms
-            </Nav.Link>
-            <Nav.Link as={NavLink} activeClassName='active' to='/add-room'>
-              Add A New Room
-            </Nav.Link>
 
             {/* login and logout button */}
             {user?.email ? (
-              <Button
-                variant='outline-dark'
-                className='ms-2'
-                size='sm'
-                onClick={handleLogout}
-              >
-                Logout
-              </Button>
+              <>
+                <Nav.Link
+                  as={NavLink}
+                  activeClassName='active'
+                  to='/my-reservation'
+                  exact
+                >
+                  My Reservation
+                </Nav.Link>
+                <Nav.Link
+                  as={NavLink}
+                  activeClassName='active'
+                  to='/manage-reservation'
+                >
+                  Manage All Rooms
+                </Nav.Link>
+                <Nav.Link as={NavLink} activeClassName='active' to='/add-room'>
+                  Add A New Room
+                </Nav.Link>
+                <Button
+                  variant='outline-dark'
+                  className='ms-2'
+                  size='sm'
+                  onClick={handleLogout}
+                >
+                  Logout
+                </Button>
+              </>
             ) : (
               <Button
                 variant='outline-dark'

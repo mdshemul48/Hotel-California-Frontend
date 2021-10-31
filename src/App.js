@@ -7,7 +7,7 @@ import { AuthProvider } from './Contexts/AuthContext';
 import Home from './components/Home/Home';
 import MyReservation from './components/MyReservation/MyReservation';
 import AddRoom from './components/AddRoom/AddRoom';
-import Services from './components/Services/Services';
+import ManageAllRooms from './components/ManageAllRooms/ManageAllRooms';
 // header and footer
 import NavBar from './components/Shared/NavBar/NavBar';
 import Footer from './components/Shared/Footer/Footer';
@@ -17,6 +17,8 @@ import Auth from './components/Auth/Auth';
 
 // private route
 import PrivateRoute from './Routes/PrivateRoute';
+
+// css
 import './App.css';
 // bootstrap style
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -36,7 +38,7 @@ function App() {
             <MyReservation />
           </PrivateRoute>{' '}
           <PrivateRoute path='/manage-reservation'>
-            <Services />
+            <ManageAllRooms />
           </PrivateRoute>{' '}
           <PrivateRoute path='/add-room'>
             <AddRoom />
