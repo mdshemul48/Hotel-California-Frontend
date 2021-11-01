@@ -36,7 +36,6 @@ const AddRoom = () => {
       alert(error.message);
     }
   };
-  console.log(room);
   return (
     <main className='my-5'>
       <Container>

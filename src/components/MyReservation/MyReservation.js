@@ -27,6 +27,7 @@ const MyReservation = () => {
     const confirm = window.confirm(
       'Are you sure you want to remove this reservation?'
     );
+
     if (confirm) {
       try {
         await axios.delete(

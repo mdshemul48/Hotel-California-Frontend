@@ -6,7 +6,6 @@ const Service = ({
   reservationRemoveHandler,
   reservationApproveHandler,
 }) => {
-  console.log(reservation);
 
   return (
     <div className='d-flex my-5'>

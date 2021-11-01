@@ -13,7 +13,6 @@ const Services = () => {
         const result = await axios.get(
           `${process.env.REACT_APP_BACKEND_LINK}/api/rooms`
         );
-        console.log(result);
         setServices(result.data);
       } catch (err) {
         console.log(err);
