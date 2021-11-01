@@ -58,16 +58,20 @@ const ManageAllRooms = () => {
 
   return (
     <Container>
-      {allReservation.map((reservation) => {
-        return (
-          <Service
-            key={reservation._id}
-            reservation={reservation}
-            reservationRemoveHandler={reservationRemoveHandler}
-            reservationApproveHandler={reservationApproveHandler}
-          />
-        );
-      })}
+      {allReservation.length ? (
+        allReservation.map((reservation) => {
+          return (
+            <Service
+              key={reservation._id}
+              reservation={reservation}
+              reservationRemoveHandler={reservationRemoveHandler}
+              reservationApproveHandler={reservationApproveHandler}
+            />
+          );
+        })
+      ) : (
+        <h1 className='my-5 text-center'>You have no reservation</h1>
+      )}
     </Container>
   );
 };

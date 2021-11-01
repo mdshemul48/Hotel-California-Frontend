@@ -46,13 +46,17 @@ const MyReservation = () => {
   return (
     <main>
       <Container>
-        {allReservation.map((reservation) => (
-          <MyAddedRooms
-            key={reservation._id}
-            reservation={reservation}
-            reservationRemoveHandler={reservationRemoveHandler}
-          />
-        ))}
+        {allReservation.length ? (
+          allReservation.map((reservation) => (
+            <MyAddedRooms
+              key={reservation._id}
+              reservation={reservation}
+              reservationRemoveHandler={reservationRemoveHandler}
+            />
+          ))
+        ) : (
+          <h1 className='my-5 text-center'>You have no reservation</h1>
+        )}
       </Container>
     </main>
   );
