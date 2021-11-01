@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import { Container, Row } from 'react-bootstrap';
 
-import Service from '../../Services/Service/Service';
+import Service from './Service';
 
 import './Services.css';
 const Services = () => {
