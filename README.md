@@ -1,4 +1,4 @@
-# MallOn - Medical & Healthcare
+# Hotel California
 
 live link: [https://hotel-california101.web.app/](https://hotel-california101.web.app/)
 
